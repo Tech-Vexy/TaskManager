@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<div class="task-manager">
+  <h1>Task Manager</h1>
+  <button onclick="googleSignIn()">Sign in with Google</button>
+  <form id="email-signin-form">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button type="submit">Sign in with Email</button>
+  </form>
+
+
+
+  <form id="task-form">
+    <input type="text" id="task-input" placeholder="Enter task">
+    <button type="submit">Add Task</button>
+  </form>
+  <ul id="task-list"></ul>
+</div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com">
+
+<script defer src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js" type="module"></script>
+<script defer src="https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js" type="module"></script>
+
+<script defer src="https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js" type="module"></script>
+<!-- Add Firebase configuration and your app's JavaScript code -->
+<script defer src="./js/app.js" type="module"></script>
+</body>
+</html>
